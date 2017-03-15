@@ -22,10 +22,14 @@ A simple UI is currently showing the conversion to euros as our default currency
 * Define an easier way to bootstrap the xml
 
 ## Open source resources used in this project
+
 Some of these are specific to the gem this app demonstrates, but we're keeping the full list here.
 
-https://github.com/ruby/ruby
-https://github.com/sinatra/sinatra
-https://github.com/sparklemotion/nokogiri
-https://github.com/transferwise/currency-flags
+* https://github.com/ruby/ruby
+* https://github.com/sinatra/sinatra
+* https://github.com/sparklemotion/nokogiri
+* https://github.com/transferwise/currency-flags
 
+## ... and things I want to use but haven't yet
+
+* http://rubymoney.github.io/money/
