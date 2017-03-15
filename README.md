@@ -10,16 +10,14 @@ inside the project directory, and sinatra will take the stage over on `localhost
 
 Visiting the site root `/` will return default values from the gem.
 
-The forex feed cand be queried using GET params thus
-
-`/?curr=JPY&date=20170-02-02&amt=40`
-
-Or, using a URL path thus:
+The forex feed cand be queried using URLS constructed thus
 
 `/JPY/2017-02-02/40`
 
-Or, the (forthcoming) UI will allow various combinations of these three params (currency, date, amount).
+A simple UI is currently showing the conversion to euros as our default currency. Maniuplating the URL shold return the forex rate for the supplied currency, to euros, for the amount supplied, on the date supplied.
 
-
-
+## Next Steps
+* Add more advanced UI features (to / from currency selector)
+* Move date param to final url option (easier optional handling)
+* Define an easier way to bootstrap the xml
 
