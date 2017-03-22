@@ -2,24 +2,34 @@
 
 Demonstrating https://github.com/chrisquinnr/getFx
 
-Clone this repo, then run 
+If you haven't already:
+
+`gem install sinatra`
+
+Clone this repo, jump into the project directory, then run
+
+`gem install getFx-cq`
+
+and then
 
 `ruby getFxApp.rb`
 
-inside the project directory, and sinatra will take the stage over on `localhost:4567`
+and sinatra will take the stage over on `localhost:4567`
 
 Visiting the site root `/` will return default values from the gem.
 
-The forex feed cand be queried using URLS constructed thus
+The forex feed can be queried using URLS constructed thus
 
 `/JPY/2017-02-02/40`
 
-A simple UI is currently showing the conversion to euros as our default currency. Maniuplating the URL shold return the forex rate for the supplied currency, to euros, for the amount supplied, on the date supplied.
+A simple UI is currently showing the conversion to euros as our default currency.
+
+Manipulating the URL should return the forex rate for the supplied currency, to euros, for the amount supplied, on the date supplied.
 
 ## Next Steps
 * Add more advanced UI features (to / from currency selector)
 * Move date param to final url option (easier optional handling)
-* Define an easier way to bootstrap the xml
+* Define an easier way to bootstrap the xml (current hosted static on AWS)
 
 ## Open source resources used in this project
 
