@@ -22,11 +22,20 @@
       </div>
       <div class="row">
         <div class="col-md-12 col-lg-12">
-          <% @currencies.each do |currency| %>
-          Beep<%= currency %><br />
-          <% end %>
+          Change currency:
+          <select id='currencyList' onchange=reRun()>
+            <% currlist.each do |currency| %>
+              <option><%= currency %></option>
+            <% end %>
+          </select>
         </div>
       </div>
     </div>
+    <script>
+      function reRun() {
+        var curr = document.getElementById("currencyList").value;
+        window.location.href = 'http://localhost:4567/' + curr + '/2017-02-28/1';
+      }
+    </script>
   </body>
   </html>
