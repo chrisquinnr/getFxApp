@@ -10,6 +10,14 @@ end
 get '/?:curr/?:date/?:amt' do
   p = params["captures"]
   output = GetFx.run(p)
-  erb :index, :locals => {:output => output, :fromflag => p[0].downcase, :from => p[0], :toflag => 'eur', :to => 'EUR', :date => p[1], :amt => p[2] }
+  currencies = GetFx.currencies()
+  erb :index, :locals => {
+    :output => output,
+    :fromflag => p[0].downcase,
+    :from => p[0],
+    :toflag => 'eur',
+    :to => 'EUR',
+    :date => p[1],
+    :amt => p[2] }
+    :currencies => currencies
 end
-

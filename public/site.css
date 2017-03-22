@@ -1,3 +1,11 @@
+.currencies {
+  font-size: 3rem;
+}
+
+.output {
+  font-size: 4rem;
+}
+
 .currency-flag {
   display: inline-block;
   width: 24px;
